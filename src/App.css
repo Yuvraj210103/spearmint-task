@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.logo {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transition: top 8s ease, left 8s ease, transform 0.1s;
+}
+
+.logo.right {
+  transform: scaleX(-1);
+}
+
+.logo.left {
+  transform: scaleX(1);
+}
